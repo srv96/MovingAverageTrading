@@ -71,7 +71,6 @@ class Api:
         return data
 
     def get_balance(self, currency):
-        # secret_bytes = bytes(self.secret, encoding='utf-8')
         timeStamp = int(round(time.time() * 1000))
         body = {
             "timestamp": timeStamp
@@ -96,7 +95,7 @@ class Api:
         body = {
             "side": "buy",
             "order_type": "limit_order",
-            "market": market,  # DOGEINR
+            "market": market,
             "price_per_unit": price_per_unit,
             "total_quantity": quantity,
             "timestamp": timeStamp
