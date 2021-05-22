@@ -1,0 +1,2 @@
+# MovingAverageTrading
+some description
